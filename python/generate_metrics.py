@@ -31,7 +31,7 @@ def main():
     npc_confusion.fill(1)
     # print(npc_confusion)
 
-    filename = '/Users/waingram/Projects/citation-parsing/npc_analysis.txt'
+    filename = '/Users/waingram/Projects/citation-parsing/results/npc_analysis.txt'
     f = open(filename, 'r')
 
     for lines in f:
@@ -79,7 +79,7 @@ def main():
     g_confusion.fill(1)
     # print(g_confusion)
 
-    filename = '/Users/waingram/Projects/citation-parsing/grobid_analysis.txt'
+    filename = '/Users/waingram/Projects/citation-parsing/results/grobid_analysis.txt'
     f = open(filename, 'r')
 
     for lines in f:
