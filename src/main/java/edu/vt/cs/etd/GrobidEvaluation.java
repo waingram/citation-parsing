@@ -1,17 +1,12 @@
 package edu.vt.cs.etd;
 
 import com.google.common.collect.ImmutableSet;
-import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.TokenStream;
-import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
 import org.grobid.core.data.BiblioItem;
 import org.grobid.core.engines.Engine;
 import org.grobid.core.factory.GrobidFactory;
 import org.grobid.core.main.GrobidHomeFinder;
 import org.grobid.core.utilities.GrobidProperties;
 
-import java.io.IOException;
-import java.io.StringReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;

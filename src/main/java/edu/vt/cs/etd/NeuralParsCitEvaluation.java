@@ -2,19 +2,10 @@ package edu.vt.cs.etd;
 
 import com.google.common.collect.ImmutableSet;
 import org.apache.lucene.analysis.Analyzer;
-import org.apache.lucene.analysis.LowerCaseFilter;
 import org.apache.lucene.analysis.TokenStream;
-import org.apache.lucene.analysis.standard.StandardTokenizer;
 import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
-import org.grobid.core.data.BiblioItem;
-import org.grobid.core.engines.Engine;
-import org.grobid.core.factory.GrobidFactory;
-import org.grobid.core.main.GrobidHomeFinder;
-import org.grobid.core.utilities.GrobidProperties;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.StringReader;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -22,7 +13,6 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
