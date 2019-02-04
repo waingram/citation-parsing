@@ -99,9 +99,10 @@ public class NeuralParsCitEvaluation {
 
                             if (!FIELDS.contains(trueLabel)) continue;
 
-                            Files.write(resultsFile, (String.format("%s\t%s\t%s\t%s%s",
+                            Files.write(resultsFile, (String.format("%s\t%s\t%s\t%s\t%s%s",
                                     referenceToken,
                                     trueValue,
+                                    predictedValue,
                                     trueLabel,
                                     predictedLabel,
                                     System.lineSeparator())).getBytes(UTF_8), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
