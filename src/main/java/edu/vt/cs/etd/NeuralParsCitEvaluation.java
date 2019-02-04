@@ -36,7 +36,7 @@ public class NeuralParsCitEvaluation {
     public static void main(String[] args) {
         try {
             String npcHome = "/Users/waingram/Projects/Neural-ParsCit";
-            String npcPath = "neural_parscit_parsed_citations.txt";
+            String npcPath = "results/neural_parscit_parsed_citations.txt";
 
             String pathCitations = "/Users/waingram/Desktop/sample17-ran100-v2/sample17-ran100-v2.citestr_combined.txt";
             String pathResult = "results/npc_analysis.txt";
@@ -99,8 +99,9 @@ public class NeuralParsCitEvaluation {
 
                             if (!FIELDS.contains(trueLabel)) continue;
 
-                            Files.write(resultsFile, (String.format("%s\t%s\t%s%s",
+                            Files.write(resultsFile, (String.format("%s\t%s\t%s\t%s%s",
                                     referenceToken,
+                                    trueValue,
                                     trueLabel,
                                     predictedLabel,
                                     System.lineSeparator())).getBytes(UTF_8), StandardOpenOption.CREATE, StandardOpenOption.APPEND);
